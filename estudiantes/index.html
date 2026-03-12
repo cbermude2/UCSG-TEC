@@ -1,191 +1,291 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Docentes - UCSG TEC</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sesión de Clase - Portal Estudiantes</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+.navbar{
+background:#002147;
+color:white;
+padding:15px;
+}
+
+.navbar h2{
+margin:0;
+}
+
+.header{
+background:linear-gradient(120deg,#002147,#0059b3);
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.section{
+padding:60px 10%;
+}
+
+.cards-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:25px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-top:10px;
+}
+
+.icon{
+font-size:30px;
+color:#0059b3;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#0059b3;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.footer{
+background:#002147;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo-container">
-                <img src="images/logo-ucsg-tec.png" alt="UCSG TEC" class="logo">
-                <span class="site-title">Portal de Docentes</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#inicio" class="active">Inicio</a></li>
-                <li><a href="#inicio-periodo">Inicio de Período</a></li>
-                <li><a href="#antes-cerrar">Antes de Cerrar</a></li>
-                <li><a href="#cierre">Cierre de Parcial</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Header -->
-    <header class="header" id="inicio">
-        <div class="header-content">
-            <h1>Bienvenido al Portal de Docentes</h1>
-            <p>Centro Universitario de Ciencias Sociales y Humanidades - TEC</p>
-        </div>
-    </header>
+<!-- NAVBAR -->
 
-    <!-- Calendario Académico -->
-    <section class="calendar-section">
-        <div class="container">
-            <h2>📅 Calendario Académico</h2>
-            <div class="calendar-display">
-                <img src="images/calendario-academico.jpg" alt="Cronograma Académico" class="calendar-image">
-            </div>
-            <div class="calendar-info">
-                <h3>Semestre A 2026 - TEC</h3>
-                <div class="dates-grid">
-                    <div class="date-item">
-                        <strong>Fecha Inicio:</strong>
-                        <p>16 de Marzo de 2026</p>
-                    </div>
-                    <div class="date-item">
-                        <strong>Fecha Fin:</strong>
-                        <p>11 de Agosto de 2026</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="navbar">
+<h2>Portal Académico – Sesión de Clase</h2>
+</div>
 
-    <!-- Inicio de Período -->
-    <section class="section" id="inicio-periodo">
-        <div class="container">
-            <h2><i class="fas fa-play-circle"></i> INICIO DE PERÍODO</h2>
-            <div class="cards-grid">
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Calendario Académico</h3>
-                    <p>Conoce las fechas importantes del semestre y los módulos de estudio.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:i:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQCrDSVmjK_fR6v27ePBZSpzAXBcfyE6VFD2BmyptWWXOkA?e=bbqCWq" target="_blank" class="btn btn-primary">
-                        Ver Documento <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
+<!-- HEADER -->
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <h3>Fondo de Pantalla para Clases Síncronas</h3>
-                    <p>Descargar el fondo de pantalla institucional para usar en tus clases.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:i:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQBFROqdJHIFRJ8rioKZtyW1AbkVWmYrNzjRf2Qk23kYxXo?e=AhgBGc" target="_blank" class="btn btn-primary">
-                        Descargar <i class="fas fa-download"></i>
-                    </a>
-                </div>
+<div class="header">
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Cómo Generar Enlace de Clase Síncrona</h3>
-                    <p>Tutorial para crear y compartir el enlace de tu clase en línea.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQAByCn66xaURrwQQkApdXlGAfFbKw0tPvkqswINqdZjugo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hqoQyh" target="_blank" class="btn btn-primary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
+<h1>Sesión de Aprendizaje</h1>
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-upload"></i>
-                    </div>
-                    <h3>Cómo Subir Grabación de Clase</h3>
-                    <p>Guía paso a paso para subir tus grabaciones de clase a la plataforma.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQCEG_sy4UA5Sbl-6DcnPnOuAXQRNcxC7ku3k_LjiCiHcYc?e=dAaG02&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank" class="btn btn-primary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<p>Asignatura: Aplicación de Redes Neuronales</p>
 
-    <!-- Antes de Cerrar un Parcial -->
-    <section class="section alt" id="antes-cerrar">
-        <div class="container">
-            <h2><i class="fas fa-clipboard-list"></i> ANTES DE CERRAR UN PARCIAL</h2>
-            <div class="cards-grid">
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-file-csv"></i>
-                    </div>
-                    <h3>Reporte de Asistencia</h3>
-                    <p>Tutorial para generar y descargar el reporte de asistencia de tus estudiantes.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQDmr5gFNQN9TbDc-Ff7OJR5AdYBbNuzuWuGczgY9Ui_RTA?e=DmezH2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank" class="btn btn-secondary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
+<p>Docente: Ing. Christian Bermúdez</p>
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Guía: Calificar los Foros</h3>
-                    <p>Instrucciones detalladas para evaluar y calificar las participaciones en foros.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQAzZzA227y_Q6_oq9_yuWXYASETdOuoSM91Fjq828QZKi8?e=IZtrn1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank" class="btn btn-secondary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
+</div>
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-hourglass-end"></i>
-                    </div>
-                    <h3>Ampliación de Plazos de Entrega</h3>
-                    <p>Procedimiento para extender fechas de entrega de actividades cuando sea necesario.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQDIsYyQFAdDT70GzPZnitXLATB3H1hSJHb5r6Dot0bxQoU?e=PdCDEA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank" class="btn btn-secondary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- INFORMACION DE LA SESION -->
 
-    <!-- Cierre de Parcial -->
-    <section class="section" id="cierre">
-        <div class="container">
-            <h2><i class="fas fa-flag-checkered"></i> CIERRE DE PARCIAL</h2>
-            <div class="cards-grid">
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Guía Promedio de Calificaciones</h3>
-                    <p>Cómo calcular y registrar correctamente el promedio de calificaciones de tus estudiantes.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQAmXODbtNQjTZfFyE1CnqTIATy2L_O8jd3ztq7BQWwSVFs?e=jElQQV&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank" class="btn btn-success">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
+<section class="section">
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-spreadsheet"></i>
-                    </div>
-                    <h3>Sistema de Evaluaciones: Detalle Profesores</h3>
-                    <p>Acceder a la hoja de cálculo con el detalle del sistema de evaluación.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:x:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQDbAEEq4yaETKw9943fNK03AU5J6v2WYhhhJ-WToVlhCuA?e=niOO6Q" target="_blank" class="btn btn-success">
-                        Ver Hoja <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<h2><i class="fas fa-calendar"></i> Información de la Sesión</h2>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 UCSG TEC - Portal de Docentes. Todos los derechos reservados.</p>
-            <p>Universidad Católica Santiago de Guayaquil - Centro Universitario de Ciencias Sociales y Humanidades</p>
-        </div>
-    </footer>
+<div class="cards-grid">
 
-    <script src="script.js"></script>
+<div class="card">
+<i class="fas fa-calendar-day icon"></i>
+<h3>Sesión</h3>
+<p>Sesión 1 – Introducción a Redes Neuronales</p>
+</div>
+
+<div class="card">
+<i class="fas fa-clock icon"></i>
+<h3>Duración</h3>
+<p>2 horas académicas</p>
+</div>
+
+<div class="card">
+<i class="fas fa-users icon"></i>
+<h3>Modalidad</h3>
+<p>Clase síncrona + trabajo autónomo</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- OBJETIVOS -->
+
+<section class="section">
+
+<h2><i class="fas fa-bullseye"></i> Objetivo de la Clase</h2>
+
+<div class="card">
+
+<p>
+
+Comprender el concepto de redes neuronales artificiales y su aplicación en
+problemas de clasificación y predicción en inteligencia artificial.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTENIDO -->
+
+<section class="section">
+
+<h2><i class="fas fa-book"></i> Contenido de la Sesión</h2>
+
+<div class="cards-grid">
+
+<div class="card">
+<i class="fas fa-brain icon"></i>
+<h3>Conceptos Clave</h3>
+
+<ul>
+<li>Neuronas artificiales</li>
+<li>Arquitectura de redes neuronales</li>
+<li>Capas de entrada, ocultas y salida</li>
+<li>Funciones de activación</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-chalkboard-teacher icon"></i>
+
+<h3>Explicación del Docente</h3>
+
+<p>
+
+Durante la sesión se explicará el funcionamiento básico de las redes neuronales
+y su uso en problemas de clasificación.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACTIVIDAD -->
+
+<section class="section">
+
+<h2><i class="fas fa-laptop-code"></i> Actividad de Aprendizaje</h2>
+
+<div class="card">
+
+<p>
+
+Implementar una red neuronal simple utilizando Python y la librería
+TensorFlow o Scikit-Learn para clasificar un conjunto de datos simple.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- RECURSOS -->
+
+<section class="section">
+
+<h2><i class="fas fa-video"></i> Recursos de Apoyo</h2>
+
+<div class="cards-grid">
+
+<div class="card">
+
+<i class="fas fa-video icon"></i>
+
+<h3>Video Explicativo</h3>
+
+<a class="btn" href="#">Ver Video</a>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-file-pdf icon"></i>
+
+<h3>Presentación</h3>
+
+<a class="btn" href="#">Descargar PDF</a>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-code icon"></i>
+
+<h3>Código de Ejemplo</h3>
+
+<a class="btn" href="#">Ver Código</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TAREA -->
+
+<section class="section">
+
+<h2><i class="fas fa-tasks"></i> Tarea</h2>
+
+<div class="card">
+
+<p>
+
+Entrenar una red neuronal para clasificar flores del dataset Iris
+y subir el notebook con resultados.
+
+</p>
+
+<a class="btn" href="#">Subir Actividad</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>
+
+© 2026 Portal Académico – Universidad Católica Santiago de Guayaquil
+
+</p>
+
+</div>
+
 </body>
 </html>
