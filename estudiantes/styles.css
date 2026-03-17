@@ -1,9 +1,18 @@
-```css id="cssfont01"
+```css id="procss01"
+:root{
+    --primary:#2f4ea2;
+    --danger:#c8102e;
+    --dark:#1e293b;
+    --bg:#f5f7fb;
+    --text:#1e293b;
+    --muted:#64748b;
+}
+
 body{
     font-family:'Inter', sans-serif;
     margin:0;
-    background:#f5f7fb;
-    color:#1e293b;
+    background:var(--bg);
+    color:var(--text);
     font-size:14px;
 }
 
@@ -12,26 +21,18 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 50px;
+    padding:16px 50px;
     background:white;
-    border-bottom:2px solid #c8102e;
+    border-bottom:2px solid var(--danger);
 }
 .header-left{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:12px;
 }
-.logo{
-    height:40px;
-}
-.header h1{
-    font-size:15px;
-    font-weight:600;
-}
-.header span{
-    color:#c8102e;
-    font-weight:700;
-}
+.logo{height:38px;}
+.header h1{font-size:15px;}
+.header span{color:var(--danger);}
 .badge{
     font-size:12px;
     background:#e8f5e9;
@@ -42,114 +43,118 @@ body{
 /* HERO */
 .hero{
     margin:30px 50px;
-    background:#2f4ea2;
+    padding:30px;
+    border-radius:12px;
+    background:var(--primary);
     color:white;
-    padding:30px 40px;
-    border-radius:14px;
     display:flex;
     justify-content:space-between;
 }
-.label{
-    font-size:12px;
-}
-.hero h2{
-    font-size:30px;
-    margin:5px 0;
-}
+.label{font-size:12px; opacity:.8;}
+.hero h2{font-size:30px;}
+.subtext{font-size:14px;}
 
-/* CALENDAR */
 .calendar-box{
     background:rgba(255,255,255,0.15);
-    padding:18px;
-    border-radius:12px;
-}
-.calendar-title{
-    font-size:13px;
-    font-weight:600;
-}
-.calendar-dates{
-    font-size:14px;
+    padding:15px;
+    border-radius:10px;
 }
 
 /* SECTION */
-.container{
-    margin:30px 50px;
-}
-h3{
+.container{margin:30px 50px;}
+.section-header h3{
     font-size:19px;
-    border-left:4px solid #c8102e;
-    padding-left:10px;
+    margin-bottom:15px;
 }
 
 /* TABLE */
+.table-wrapper{
+    overflow-x:auto;
+}
 table{
     width:100%;
     background:white;
-    border-radius:12px;
+    border-radius:10px;
     border-collapse:collapse;
 }
+th,td{padding:14px;}
 th{
     font-size:12px;
+    color:var(--muted);
     background:#f1f5f9;
 }
-td{
-    font-size:14px;
-}
-th, td{
-    padding:14px;
-}
 td a{
-    font-size:14px;
-    color:#2f4ea2;
-    text-decoration:none;
+    color:var(--primary);
+    font-weight:500;
 }
 
-/* CARDS */
-.cards{
-    display:flex;
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 .card{
-    flex:1;
-    padding:25px;
     background:white;
-    border-radius:14px;
+    padding:20px;
+    border-radius:12px;
+    transition:.2s;
 }
-.card h4{
-    font-size:16px;
+.card:hover{
+    transform:translateY(-3px);
 }
-.card p{
-    font-size:14px;
-}
+
+/* BUTTONS */
 .btn{
-    margin-top:15px;
-    padding:12px;
-    border-radius:8px;
     display:block;
+    margin-top:10px;
+    padding:10px;
+    border-radius:8px;
     text-align:center;
-    font-size:14px;
     color:white;
     text-decoration:none;
 }
-.blue{background:#2f4ea2;}
-.red{background:#c8102e;}
-.dark{background:#1e293b;}
+.primary{background:var(--primary);}
+.danger{background:var(--danger);}
+.dark{background:var(--dark);}
+
+/* FAQ */
+.faq details{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:10px;
+}
+.faq summary{
+    cursor:pointer;
+    font-weight:600;
+}
 
 /* CONTACT */
 .contact{
     margin:30px 50px;
     padding:30px;
-    background:#1e293b;
+    background:var(--dark);
     color:white;
-    border-radius:14px;
+    border-radius:12px;
     display:flex;
     justify-content:space-between;
 }
-.contact h3{
-    font-size:19px;
+.contact-box{
+    max-width:350px;
 }
-.contact-text p{
-    font-size:13px;
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    margin:40px;
+    font-size:12px;
+    color:var(--muted);
 }
-.contact-text h4{
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{flex-direction:column; gap:15px;}
+    .contact{flex-direction:column; gap:20px;}
+}
 ```
