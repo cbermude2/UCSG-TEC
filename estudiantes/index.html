@@ -2,242 +2,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Docentes - UCSG TEC</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Académico IA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo-container">
-                <img src="images/logo-ucsg-tec.png" alt="UCSG TEC" class="logo">
-                <span class="site-title">Portal de Docentes</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#inicio" class="active">Inicio</a></li>
-                <li><a href="#inicio-periodo">Inicio de Período</a></li>
-                <li><a href="#antes-cerrar">Antes de Cerrar</a></li>
-                <li><a href="#cierre">Cierre de Parcial</a></li>
-                <li><a href="#enlaces">Enlaces</a></li>
-            </ul>
+<!-- HEADER -->
+<header class="header">
+    <div class="header-left">
+        <h1>Portal Académico <span>Inteligencia Artificial</span></h1>
+    </div>
+    <div class="badge">● Cohorte 2</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <p class="label">PERIODO ACADÉMICO</p>
+        <h2>Periodo 1, Módulo A</h2>
+    </div>
+    <div class="calendar-box">
+        <p>📅 CALENDARIO</p>
+        <span>Inicio: 16 de marzo — Fin: 10 de mayo</span>
+    </div>
+</section>
+
+<!-- HORARIO -->
+<section class="container">
+    <h3>HORARIO DE CLASES</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>DÍA</th>
+                <th>HORARIO</th>
+                <th>ASIGNATURA</th>
+                <th>DOCENTE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Martes</td>
+                <td>19h00 - 22h00</td>
+                <td>Estructura de datos y algoritmos</td>
+                <td><a href="mailto:ruben.navarrete@cu.ucsg.edu.ec">Navarrete Millán Rubén Darío</a></td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>19h00 - 22h00</td>
+                <td>Aplicación de conceptos de Ingeniería de software</td>
+                <td><a href="mailto:xavier.veloz01@cu.ucsg.edu.ec">Veloz Zavala Xavier Benigno</a></td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>19h00 - 21h00</td>
+                <td>Aplicación de redes neuronales</td>
+                <td><a href="mailto:Christian.bermudez@cu.ucsg.edu.ec">Bermudez Gallegos Christian Wladimir</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- RECURSOS -->
+<section class="container">
+    <h3>RECURSOS DEL ESTUDIANTE</h3>
+
+    <div class="cards">
+
+        <div class="card">
+            <h4>Plataforma Académica</h4>
+            <p>Accede a tus cursos, videoconferencias y materiales.</p>
+            <a href="http://tec.ucsg.edu.ec" target="_blank" class="btn blue">Acceder a TEC</a>
         </div>
-    </nav>
 
-    <!-- Header -->
-    <header class="header" id="inicio">
-        <div class="header-content">
-            <h1>Bienvenido al Portal de Docentes</h1>
-            <p>Unidad Académica para la Formación Técnica y Tecnológica</p>
+        <div class="card">
+            <h4>Servicios en Línea</h4>
+            <p>Trámites académicos y certificados.</p>
+            <a href="https://www46.ucsg.edu.ec/Login.htm" target="_blank" class="btn red">Gestión de Trámites</a>
         </div>
-    </header>
 
-    <!-- Calendario Académico -->
-    <section class="calendar-section">
-        <div class="container">
-            <div class="calendar-info">
-                <h3>Semestre A 2026 - TEC</h3>
-                <div class="dates-grid">
-                    <div class="date-item">
-                        <strong>Fecha Inicio:</strong>
-                        <p>16 de Marzo de 2026</p>
-                    </div>
-                    <div class="date-item">
-                        <strong>Fecha Fin:</strong>
-                        <p>11 de Agosto de 2026</p>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+            <h4>Correo Institucional</h4>
+            <p>Consulta tu correo institucional.</p>
+            <a href="https://webmail.cu.ucsg.edu.ec" target="_blank" class="btn dark">Revisar Outlook</a>
         </div>
-    </section>
 
-    <!-- Inicio de Período -->
-    <section class="section" id="inicio-periodo">
-        <div class="container">
-            <h2><i class="fas fa-play-circle"></i> INICIO DE PERÍODO</h2>
-            <div class="cards-grid">
+    </div>
+</section>
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Calendario Académico</h3>
-                    <p>Conoce las fechas importantes del semestre y los módulos de estudio.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:i:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQCrDSVmjK_fR6v27ePBZSpzAXBcfyE6VFD2BmyptWWXOkA?e=bbqCWq" target="_blank" class="btn btn-primary">
-                        Ver Documento <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
+<!-- CONTACTO -->
+<section class="contact">
+    <div>
+        <h3>Soporte y Contacto</h3>
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <h3>Fondo de Pantalla para Clases Síncronas</h3>
-                    <p>Descargar el fondo de pantalla institucional para usar en tus clases.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:i:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQBFROqdJHIFRJ8rioKZtyW1AbkVWmYrNzjRf2Qk23kYxXo?e=AhgBGc" target="_blank" class="btn btn-primary">
-                        Descargar <i class="fas fa-download"></i>
-                    </a>
-                </div>
+        <p><strong>Requerimientos Académicos</strong><br>
+        <a href="mailto:academico.tec@cu.uscg.edu.ec">academico.tec@cu.uscg.edu.ec</a></p>
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Cómo Generar Enlace de Clase Síncrona</h3>
-                    <p>Tutorial para crear y compartir el enlace de tu clase en línea.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQAByCn66xaURrwQQkApdXlGAfFbKw0tPvkqswINqdZjugo" target="_blank" class="btn btn-primary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
+        <p><strong>Financieros y Claves</strong><br>
+        <a href="mailto:admisiones.tec@cu.ucsg.edu.ec">admisiones.tec@cu.ucsg.edu.ec</a></p>
+    </div>
 
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-upload"></i>
-                    </div>
-                    <h3>Cómo Subir Grabación de Clase</h3>
-                    <p>Guía paso a paso para subir tus grabaciones de clase a la plataforma.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQCEG_sy4UA5Sbl-6DcnPnOuAXQRNcxC7ku3k_LjiCiHcYc" target="_blank" class="btn btn-primary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
+    <div class="contact-text">
+        <p>¿Necesitas ayuda inmediata?</p>
+        <h4>Nuestro equipo de soporte técnico está disponible para asistirte.</h4>
+    </div>
+</section>
 
-            </div>
-        </div>
-    </section>
+<!-- FOOTER -->
+<footer class="footer">
+    © 2026 Universidad Católica de Santiago de Guayaquil - TEC
+</footer>
 
-    <!-- Antes de Cerrar -->
-    <section class="section alt" id="antes-cerrar">
-        <div class="container">
-            <h2><i class="fas fa-clipboard-list"></i> ANTES DE CERRAR UN PARCIAL</h2>
-            <div class="cards-grid">
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-file-csv"></i>
-                    </div>
-                    <h3>Reporte de Asistencia</h3>
-                    <p>Tutorial para generar y descargar el reporte de asistencia de tus estudiantes.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQDmr5gFNQN9TbDc-Ff7OJR5AdYBbNuzuWuGczgY9Ui_RTA" target="_blank" class="btn btn-secondary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Guía: Calificar los Foros</h3>
-                    <p>Instrucciones detalladas para evaluar y calificar las participaciones en foros.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQAzZzA227y_Q6_oq9_yuWXYASETdOuoSM91Fjq828QZKi8" target="_blank" class="btn btn-secondary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-hourglass-end"></i>
-                    </div>
-                    <h3>Ampliación de Plazos de Entrega</h3>
-                    <p>Procedimiento para extender fechas de entrega de actividades cuando sea necesario.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQDIsYyQFAdDT70GzPZnitXLATB3H1hSJHb5r6Dot0bxQoU" target="_blank" class="btn btn-secondary">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Cierre -->
-    <section class="section" id="cierre">
-        <div class="container">
-            <h2><i class="fas fa-flag-checkered"></i> CIERRE DE PARCIAL</h2>
-            <div class="cards-grid">
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Guía Promedio de Calificaciones</h3>
-                    <p>Cómo calcular y registrar correctamente el promedio.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:v:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQAmXODbtNQjTZfFyE1CnqTIATy2L_O8jd3ztq7BQWwSVFs" target="_blank" class="btn btn-success">
-                        Ver Video <i class="fas fa-play"></i>
-                    </a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-table"></i>
-                    </div>
-                    <h3>Sistema de Evaluaciones</h3>
-                    <p>Detalle del sistema de evaluación.</p>
-                    <a href="https://cuucsgedu-my.sharepoint.com/:x:/g/personal/christian_bermudez_cu_ucsg_edu_ec/IQDbAEEq4yaETKw9943fNK03AU5J6v2WYhhhJ-WToVlhCuA" target="_blank" class="btn btn-success">
-                        Ver Hoja <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Enlaces de Utilidad -->
-    <section class="section alt" id="enlaces">
-        <div class="container">
-            <h2><i class="fas fa-link"></i> ENLACES DE UTILIDAD</h2>
-
-            <div class="cards-grid">
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-sitemap"></i>
-                    </div>
-                    <h3>Malla Curricular</h3>
-                    <p>Consulta la estructura académica completa de la carrera de Desarrollo de Software.</p>
-                    <a href="https://www.ucsgtec.edu.ec/wp-content/uploads/2025/03/Malla-Software.pdf"
-                       target="_blank"
-                       class="btn btn-primary">
-                       Ver PDF <i class="fas fa-file-pdf"></i>
-                    </a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Calendario Académico</h3>
-                    <p>Revisa las fechas importantes del semestre académico.</p>
-                    <a href="#" class="btn btn-primary">
-                        Ver Calendario <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="card-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Reglamento Académico</h3>
-                    <p>Normativas institucionales para docentes y estudiantes.</p>
-                    <a href="#" class="btn btn-primary">
-                        Ver Documento <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 UCSG TEC - Portal de Docentes. Todos los derechos reservados.</p>
-            <p>Universidad Católica Santiago de Guayaquil</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
 ```
