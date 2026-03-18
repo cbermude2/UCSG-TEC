@@ -7,6 +7,8 @@
     --muted:#64748b;
 }
 
+html{scroll-behavior:smooth;}
+
 body{
     font-family:'Inter', sans-serif;
     margin:0;
@@ -39,6 +41,22 @@ body{
     border-radius:20px;
 }
 
+/* MENU */
+.quick-menu{
+    display:flex;
+    gap:25px;
+    padding:10px 50px;
+    background:white;
+    border-bottom:1px solid #e5e7eb;
+}
+.quick-menu a{
+    text-decoration:none;
+    font-size:13px;
+    color:#334155;
+    font-weight:500;
+}
+.quick-menu a:hover{color:var(--primary);}
+
 /* HERO */
 .hero{
     margin:30px 50px;
@@ -49,12 +67,12 @@ body{
     display:flex;
     justify-content:space-between;
 }
-.label{font-size:12px; opacity:.8;}
+.label{font-size:12px;}
 .hero h2{font-size:30px;}
 .subtext{font-size:14px;}
 
 .calendar-box{
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.2);
     padding:15px;
     border-radius:10px;
 }
@@ -67,9 +85,6 @@ body{
 }
 
 /* TABLE */
-.table-wrapper{
-    overflow-x:auto;
-}
 table{
     width:100%;
     background:white;
@@ -79,8 +94,8 @@ table{
 th,td{padding:14px;}
 th{
     font-size:12px;
-    color:var(--muted);
     background:#f1f5f9;
+    color:var(--muted);
 }
 td a{
     color:var(--primary);
@@ -99,8 +114,13 @@ td a{
     border-radius:12px;
     transition:.2s;
 }
-.card:hover{
-    transform:translateY(-3px);
+.card:hover{transform:translateY(-4px);}
+
+/* ICON */
+.icon{
+    font-size:22px;
+    margin-bottom:10px;
+    color:var(--primary);
 }
 
 /* BUTTONS */
@@ -111,49 +131,5 @@ td a{
     border-radius:8px;
     text-align:center;
     color:white;
-    text-decoration:none;
-}
-.primary{background:var(--primary);}
-.danger{background:var(--danger);}
-.dark{background:var(--dark);}
-
-/* FAQ */
-.faq details{
-    background:white;
-    border-radius:10px;
-    padding:15px;
-    margin-bottom:10px;
-}
-.faq summary{
-    cursor:pointer;
-    font-weight:600;
-}
-
-/* CONTACT */
-.contact{
-    margin:30px 50px;
-    padding:30px;
-    background:var(--dark);
-    color:white;
-    border-radius:12px;
-    display:flex;
-    justify-content:space-between;
-}
-.contact-box{
-    max-width:350px;
-}
-
-/* FOOTER */
-.footer{
-    text-align:center;
-    margin:40px;
-    font-size:12px;
-    color:var(--muted);
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-    .hero{flex-direction:column; gap:15px;}
-    .contact{flex-direction:column; gap:20px;}
-}
+    text-decoration:n
 ```
